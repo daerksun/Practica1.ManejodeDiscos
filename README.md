@@ -75,4 +75,4 @@ partición que abarque toda la “usb”.**
 
 10. **Copiar un archivo .iso de distribución live de linux a la usb por medio del comando "dd".**
 
-
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/24.png "Im24")
