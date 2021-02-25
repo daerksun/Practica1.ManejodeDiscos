@@ -2,7 +2,7 @@
 
 ## 1. **Identificar y describir las diferencias entre hda, sda y vda, además explicar qué significa la letra y el número al final de los identificadores (no requiere captura de pantalla).**
 
-HDA es el IDE principal en los controladores . El SO Linux toma el primer disco duro y lo representa como HDA , la cual sus particiones seran conocidas como hda1 , hda2 , hda3 , hdan. SD es un estandar para definir la conexion de dispositivos hacia las placas base de las computadoras , por lo que SDA  es significa primer disco duro por parte del SCSI, por lo cual cada particion de esta tomara el nombre de sda1 , sda2 , sda3 , sdan
+HDA es el acronimo que asigna el sistema al IDE principal en los controladores dentro de los dispositivos conectados. El SO Linux toma el primer disco duro y lo representa como HDA , la cual sus particiones seran conocidas como hda1 , hda2 , hda3 , hdan. SD es un estandar para definir la conexion de dispositivos hacia las placas base de las computadoras , por lo que SDA  es significa primer disco duro por parte del SCSI, por lo cual cada particion de esta tomara el nombre de sda1 , sda2 , sda3 , sdan
 Y la letra sirve para lograr diferencia el dispositivo pudiendo ser el primario o el esclavo del ide primario.
 VDA es un controlador de disco paravirtualizado detectado. Presenta más velocidad que los dispositivos sdX.
 
@@ -23,32 +23,31 @@ Por otro lado, para el mismo proceso de manera inversa, es decir montar algun si
  mount [opciones] <fuente> <directorio>
  mount <operación> <puntodemontaje> [<destino>]
 
-Para demostrar el uso de las funciones anteriores primero buscamos un dispositivo desmontable con la funcion **lsbl**, una vez definido que el dispositivo que ocuparemos sera /dev/sdc1, se procede a desmontarlo con la instruccion **sudo umount /dev/sdc1**(no hay que olvidar que la instruccion ), despues se genera una carpeta con todos los permisos para que se monte ahi la USB que acabamos de montar, lo hacemos con la instruccion **sudo mount /dev/sdc1 ./mont/**
+Para demostrar el uso de las funciones anteriores primero buscamos un dispositivo desmontable con la funcion **lsbl**, una vez definido que el dispositivo que ocuparemos sera /dev/sdc1, se procede a desmontarlo con la instruccion **sudo umount /dev/sdc1** (no hay que olvidar que la instruccion), despues se genera una carpeta con todos los permisos para que se monte ahi la USB que acabamos de montar, lo hacemos con la instruccion **sudo mount /dev/sdc1 ./mont/**
 
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/1.png "Im1")
 
 ## 3. **Enlistar la información de los dispositivos de bloque conectados aunque no estén montados en terminal.**
 
-lsblk
+Con la funcion **lsblk** podemos desplegar informacion de los dispositivos de bloque que se encuentran conectados al dispositivo, esten o no montados en el sistema operativo
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/2.png "Im2")
 
 ## 4. **Mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal.**
 
-sudo fdisk -l
+Simplemente usamos la funcion **fdisk** junto con su atributo -l para simplemente enlistar la tabla de particiones de todos los dispositivos, si ademas agregadmos el dispositivo en especifico, como el /dev/sdc1, podemos tener tablas de particiones específicas, para el ejemplo usamos solo la funcion **sudo fdisk -l
+
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/5.png "Im5")
 
 ## 5. **Conectar una memoria usb (“usb”) y mostrar su tabla de particiones en terminal (hacer respaldo antes porque se va a borrar toda la información dentro del usb en pasos posteriores).**
 
-sudo fdisk -l /dev/sdc
+Con la inforacion del paso anterior, usamos **sudo fdisk -l /dev/sdc**
+
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/7.png "Im7")
 
 ## 6. **Borrar todas las particiones del “usb” en terminal.**
 
-unmount
-fdiks /dev/sdc
-d - delete
-w - write
-fdisk -l /dev/sdc
+La funcion **fdisk** aparte de ayudarnos a enlistar las tablas de particiones, tambien nos permite diversas interacciones con los discos, como borrar o crear particiones. Para esto, primero desmontamos el disco en el que haremos los cambios con la funcion **umount** para poder modificar sus particiones. Despues usamos **fdisk /dev/sdc** para entrar al menu de configuracion. Posteriormente introducimos la instruccion d (delete) para borrar una particion. Si tienes diferentes particiones te pide el disco, en caso contrario guarda la instruccion de borrar la particion, y finalizamos con w para guardar los cambios
+
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/8.png "Im8")
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/9.png "Im9")
 
