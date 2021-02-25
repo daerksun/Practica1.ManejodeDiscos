@@ -55,12 +55,13 @@ w
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/11.png "Im11")
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/12.png "Im12")
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/13.png "Im13")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/14.png "Im14")
 
 8. **Crear una partición dentro de la partición extendida del “usb” en terminal.**
 
 fdisk /dev/sdc
 l - particion lógica w
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/14.png "Im14")
+
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/15.png "Im15")
 ![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/16.png "Im16")
 
