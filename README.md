@@ -49,6 +49,11 @@ e - particion extendida
 Primer Sector
 Ultimo Sector
 w
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/10.jpeg "Im")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/11.png "Im")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/12.png "Im")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/13.png "Im")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/14.png "Im")
 
 8. **Crear una partición dentro de la partición extendida del “usb” en terminal.**
 
