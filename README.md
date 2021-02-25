@@ -2,9 +2,9 @@
 
 1. **Identificar y describir las diferencias entre hda, sda y vda, además explicar qué significa la letra y el número al final de los identificadores (no requiere captura de pantalla).**
 
+HDA es el IDE principal en los controladores . El SO Linux toma el primer disco duro y lo representa como HDA , la cual sus particiones seran conocidas como hda1 , hda2 , hda3 , hdan. Y la letra sirve para lograr diferencia el dispositivo pudiendo ser el primario o el esclavo del ide primario
 
-
-
+El número al final de la palabra "hda1", "hda2" significa el número de la partición.
 
 2. **¿Cómo montar y desmontar un usb en el sistema por terminal?**
 
