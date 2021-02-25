@@ -21,12 +21,12 @@ lsblk
 4. **Mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal.**
 
 sudo fdisk -l
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/5.png "Im3")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/5.png "Im5")
 
 5. **Conectar una memoria usb (“usb”) y mostrar su tabla de particiones en terminal (hacer respaldo antes porque se va a borrar toda la información dentro del usb en pasos posteriores).**
 
 sudo fdisk -l /dev/sdc
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/7.png "Im4")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/7.png "Im7")
 
 6. **Borrar todas las particiones del “usb” en terminal.**
 
@@ -35,8 +35,8 @@ fdiks /dev/sdc
 d - delete
 w - write
 fdisk -l /dev/sdc
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/8.png "Im5")
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/9.png "Im5")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/8.png "Im8")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/9.png "Im9")
 
 
 7.** Crear en el “usb” tres particiones físicas y una extendida en terminal.**
