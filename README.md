@@ -25,8 +25,6 @@ sudo fdisk -l
 5. **Conectar una memoria usb (“usb”) y mostrar su tabla de particiones en terminal (hacer respaldo antes porque se va a borrar toda la información dentro del usb en pasos posteriores).**
 
 sudo fdisk -l /dev/sdc
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/7.png "Im4")
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/9.png "Im5")
 
 6. **Borrar todas las particiones del “usb” en terminal.**
 
@@ -51,21 +49,22 @@ e - particion extendida
 Primer Sector
 Ultimo Sector
 w
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/10.jpeg "Im")
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/11.png "Im")
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/12.png "Im")
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/13.png "Im")
-![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/14.png "Im")
 
 8. **Crear una partición dentro de la partición extendida del “usb” en terminal.**
 
 fdisk /dev/sdc
-l - particion lógica
-w
+l - particion lógica w
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/14.png "Im14")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/15.png "Im15")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/16.png "Im16")
 
 9. **En la interfaz gráfica de la aplicación disks, borrar las particiones para que sólo exista una
 partición que abarque toda la “usb”.**
-
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/18.png "Im18")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/19.png "Im19")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/20.png "Im20")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/21.png "Im21")
+![alt text](https://github.com/daerksun/Practica1.ManejodeDiscos/blob/main/Imagenes/22.png "Im22")
 
 10. **Copiar un archivo .iso de distribución live de linux a la usb por medio del comando "dd".**
 
